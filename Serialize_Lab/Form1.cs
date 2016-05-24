@@ -66,23 +66,36 @@ namespace Serialize_Lab
         private void LoadAssemblies(string asmName)
         {
             asm = Assembly.LoadFrom(asmName);
-            Type type = typeof(object);
-            IDeserializator des = new Deserializatores.CarDeserealizator();
-            foreach (Type t in asm.GetTypes())
+            AssemblyDescriptionAttribute atrDescr = (AssemblyDescriptionAttribute)AssemblyDescriptionAttribute.GetCustomAttribute(asm, typeof(AssemblyDescriptionAttribute));
+            string hash = atrDescr.Description;
+            AssemblyTitleAttribute atrName = (AssemblyTitleAttribute)AssemblyTitleAttribute.GetCustomAttribute(asm, typeof(AssemblyTitleAttribute));
+            string name = atrName.Title;
+            HashTable hashTable = new HashTable();
+            if (hashTable.Check(name, hash))
             {
-                if (t.IsClass && typeof(ITransport).IsAssignableFrom(t))
+                assemblies.Add(asm);
+                Type type = typeof(object);
+                IDeserializator des = new Deserializatores.CarDeserealizator();
+                foreach (Type t in asm.GetTypes())
                 {
-                    type = t;
-                }
-                if (t.IsClass && typeof(IDeserializator).IsAssignableFrom(t))
-                {
-                    des = (IDeserializator)Activator.CreateInstance(t);
+                    if (t.IsClass && typeof(ITransport).IsAssignableFrom(t))
+                    {
+                        type = t;
+                    }
+                    if (t.IsClass && typeof(IDeserializator).IsAssignableFrom(t))
+                    {
+                        des = (IDeserializator)Activator.CreateInstance(t);
+
+                    }
 
                 }
 
+                objectDeserializer.AddDeserializator(type, des);
             }
-
-            objectDeserializer.AddDeserializator(type, des);
+            else
+            {
+                MessageBox.Show("Wrong sign of plugin!");
+            }
         }
 
         private void DeserializeObject()
