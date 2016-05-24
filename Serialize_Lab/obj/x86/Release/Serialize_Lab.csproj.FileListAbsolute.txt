@@ -1,0 +1,12 @@
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Release\Serialize_Lab.exe
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Release\Serialize_Lab.pdb
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Release\InterfacePluginLibrary.dll
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Release\Newtonsoft.Json.dll
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Release\InterfacePluginLibrary.pdb
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Release\Newtonsoft.Json.xml
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Release\Serialize_Lab.csprojResolveAssemblyReference.cache
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Release\Serialize_Lab.Form1.resources
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Release\Serialize_Lab.Properties.Resources.resources
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Release\Serialize_Lab.csproj.GenerateResource.Cache
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Release\Serialize_Lab.exe
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Release\Serialize_Lab.pdb

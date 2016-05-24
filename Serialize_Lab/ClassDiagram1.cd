@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Serialize_Lab.Classes.AirTransport" Collapsed="true">
+    <Position X="1.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABABAAAAA=</HashCode>
+      <FileName>Classes\AirTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.AutoTransport" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAABAAAAEAAAAAIAAAgAA=</HashCode>
+      <FileName>Classes\AutoTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.Helicopter" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAABAACAEAAAIAAAAAAAA=</HashCode>
+      <FileName>Classes\Helicopter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.OverlandTransport" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAAABAAAAA=</HashCode>
+      <FileName>Classes\OverlandTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.Plane" Collapsed="true">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAACAAAAABAABAAAAEAAAAAAgAAAAE=</HashCode>
+      <FileName>Classes\Plane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.RailTransport" Collapsed="true">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAIAAABAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\RailTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.SailingTransport" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAARAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\SailingTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.SteamboatTransport" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAEAAAAAABAAAAA=</HashCode>
+      <FileName>Classes\SteamboatTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.Transport" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQEBAEAAEAAAAUAAAABAA=</HashCode>
+      <FileName>Classes\Transport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Classes.WaterTransport" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAQAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\WaterTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Deserializatores.CarDeserealizator" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deserializatores\CarDeserealizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Deserializatores.Deserealizator" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deserializatores\Deserealizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Deserializatores.HelecopterDeserealizetor" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deserializatores\HelecopterDeserealizetor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Deserializatores.PlaneDeserealizator" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deserializatores\PlaneDeserealizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Deserializatores.RailDeserializator" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deserializatores\RailDeserializator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Deserializatores.SailDesereliazator" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deserializatores\SailDesereliazator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Deserializatores.SteamBoatDeserializator" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deserializatores\SteamBoatDeserializator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Form1" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEACAEDEAGAAgBAYAUCASAACCAABAAIQAkQIgCAABAE=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Program" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Serializators" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serializators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.ListOfTypes" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ListOfTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Properties.Resources" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serialize_Lab.Properties.Settings" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,10 @@
+c:\users\gs\documents\visual studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Debug\Serialize_Lab.exe
+c:\users\gs\documents\visual studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Debug\Serialize_Lab.pdb
+c:\users\gs\documents\visual studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Debug\Serialize_Lab.Properties.Resources.resources
+c:\users\gs\documents\visual studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Debug\Serialize_Lab.csproj.GenerateResource.Cache
+c:\users\gs\documents\visual studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Debug\Serialize_Lab.exe
+c:\users\gs\documents\visual studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Debug\Serialize_Lab.pdb
+c:\users\gs\documents\visual studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Debug\Serialize_Lab.Form1.resources
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Debug\Serialize_Lab.csprojResolveAssemblyReference.cache
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Debug\Newtonsoft.Json.xml
