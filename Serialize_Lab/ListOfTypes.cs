@@ -8,9 +8,7 @@ using System.Reflection;
 namespace Serialize_Lab
 {
     class ListOfTypes
-    {
-        Assembly asm = Assembly.LoadFrom("plugins\\HelicopterPlugin.dll");
-            
+    {           
         private List<Type> transports = new List<Type>();
 
         public List<Type> Content

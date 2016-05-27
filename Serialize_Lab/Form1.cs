@@ -39,18 +39,16 @@ namespace Serialize_Lab
         private void SerializeObject()
         {
             ListOfTypes typeList = new ListOfTypes();
-            string path = @"D:\serial.bin";
+            string path = @"serial.bin";
             string data = string.Empty;
+            string serializeData = string.Empty;
             JsonSerializer serializer = new JsonSerializer();
             
             foreach ( ITransport transport in transports )
             {
-                MemoryStream ms = new MemoryStream();
-
-                BsonWriter writer = new BsonWriter(ms);
-                serializer.Serialize(writer, transport);
+                serializeData = objectDeserializer.Serialize(transport.GetType(), transport);
                 typeList.Content.Add(transport.GetType());
-                data += Convert.ToBase64String(ms.ToArray()) + " ";
+                data += serializeData + " ";
             }
 
             MemoryStream ms1 = new MemoryStream();
@@ -76,6 +74,7 @@ namespace Serialize_Lab
                 assemblies.Add(asm);
                 Type type = typeof(object);
                 IDeserializator des = new Deserializatores.CarDeserealizator();
+                ISerializer ser = new StandartSerializer();
                 foreach (Type t in asm.GetTypes())
                 {
                     if (t.IsClass && typeof(ITransport).IsAssignableFrom(t))
@@ -87,10 +86,15 @@ namespace Serialize_Lab
                         des = (IDeserializator)Activator.CreateInstance(t);
 
                     }
+                    if (t.IsClass && typeof(ISerializer).IsAssignableFrom(t))
+                    {
+                        ser = (ISerializer)Activator.CreateInstance(t);
 
+                    }
                 }
 
                 objectDeserializer.AddDeserializator(type, des);
+                objectDeserializer.AddSerializator(type, ser);
             }
             else
             {
@@ -105,7 +109,7 @@ namespace Serialize_Lab
             LoadAssemblies("PlanePlugin.dll");
             LoadAssemblies("HelicopterPlugin.dll");
 
-            string path = @"D:\serial.bin";
+            string path = @"serial.bin";
             ListOfTypes typeList;
 
             JsonSerializer serializer = new JsonSerializer();
@@ -125,7 +129,7 @@ namespace Serialize_Lab
 
             for (int i = 0; i < typeList.Content.Count; i++ )
             {
-                transports.Add(objectDeserializer.Serialize(typeList.Content[i], dataList[i]));
+                transports.Add(objectDeserializer.Deserialize(typeList.Content[i], dataList[i]));
             }
         }
 
@@ -287,12 +291,14 @@ namespace Serialize_Lab
 
         private void itemsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            createButton.Enabled = false;
-            changeButton.Enabled = true;
-            
-            ChangeInterface(transports[itemsListBox.SelectedIndex].Attridutes);
-            nameTextBox.Text = transports[itemsListBox.SelectedIndex].GetName();
-            nameTextBox.Enabled = true;
+            if (itemsListBox.SelectedIndex > -1)
+            {
+                createButton.Enabled = false;
+                changeButton.Enabled = true;
+                ChangeInterface(transports[itemsListBox.SelectedIndex].Attridutes);
+                nameTextBox.Text = transports[itemsListBox.SelectedIndex].GetName();
+                nameTextBox.Enabled = true;
+            }
         }
 
         private void changeButton_Click(object sender, EventArgs e)
@@ -325,7 +331,20 @@ namespace Serialize_Lab
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SerializeObject();
+            try
+            {
+                SerializeObject();
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new Settings();
+            form.ShowDialog();
         }
     }
 }

@@ -9,3 +9,4 @@ C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\ob
 C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Debug\Newtonsoft.Json.dll
 C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Debug\Newtonsoft.Json.xml
 C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\bin\Debug\InterfacePluginLibrary.pdb
+C:\Users\gs\Documents\Visual Studio 2010\Projects\Serialize_Lab\Serialize_Lab\obj\x86\Debug\Serialize_Lab.Settings.resources
